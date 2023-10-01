@@ -20,7 +20,7 @@ def ff_io_args(i: str) -> tuple:
     iv_pth = raws_pth / fu.season / (e + '.mp4')
     ia_pth = raws_pth / fu.season / (e + '.ac3')
     pth = out_pth / fu.season / (e + '.mkv')
-    pth.mkdir(parents=True, exist_ok=True)
+    # pth.parent.mkdir(parents=True, exist_ok=True)
     return iv_pth, ia_pth, pth
 
 
